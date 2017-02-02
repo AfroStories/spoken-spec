@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spec>
+    <name>event</name>
+    <host>@string/host</host>
+    <modifier name="authentication" src="com.absolut.hoppr.authentication" type="header"/>
+    <list>
+        <path>/event/all</path>
+        <cells>
+            <cell id="view_event_details" layout="@layout/list_cell_generic_1" action="show_event_detail">
+                <view id="image" name="image_sm"/>
+                <view id="title" name="start"/>
+                <view id="sub_title_1" name="name" order="1"/>
+                <view id="sub_title_2" name="host_name" />
+            </cell>
+        </cells>
+    </list>
+</spec>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="data.db"
+    version="1">
+    <table name="track" path="staging/tracks" label="Tracks">
+        <column name="id"  primary="true" visible="false" editable="false"/>
+        <column name="artist" label="Artist"/>
+        <column name="channelThumbnail" label="Thumbnail" input="image/*"/>
+        <column name="description" input="text"/>
+        <column name="image" input="image/*"/>
+        <column name="link"/>
+        <column name="title"/>
+    </table>
+
+    <table name="artist" path="staging/artists" label="Artists">
+        <column name="id"  primary="true" visible="false" editable="false"/>
+        <column name="name" label="Name"/>
+        <column name="channelThumbnail" label="Thumbnail" input="image/*"/>
+    </table>
+
+    <table name="playlist" path="staging/playlists" label="Playlists">
+        <column name="id"  primary="true" visible="false" editable="false"/>
+        <column name="name" label="Name"/>
+        <column name="channelThumbnail" label="Thumbnail" input="image/*"/>
+    </table>
+
+    <table name="editorial" path="staging/editorials" label="Editorials">
+        <column name="id"  primary="true" visible="false" editable="false"/>
+        <column name="name" label="Name"/>
+        <column name="banner" label="Banner" input="image/*"/>
+        <column name="image" label="Image" input="image/*"/>
+        <column name="content" label="Content" input="image/*"/>
+        <column name="author" label="Author" input="image/*"/>
+    </table>
+</schema>

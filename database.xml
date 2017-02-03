@@ -33,9 +33,10 @@
     <table name="editorial" path="staging/editorials" label="Editorials">
         <column name="id"  primary="true" visible="false" editable="false"/>
         <column name="name" label="Name"/>
-        <column name="banner" label="Banner" input="image/*"/>
-        <column name="image" label="Image" input="image/*"/>
-        <column name="content" label="Content" input="image/*"/>
-        <column name="author" label="Author" input="image/*"/>
+        <column name="banner" label="Banner" input="date_time"/>
+        <column name="banner" label="Banner" input="image"/>
+        <column name="image" label="Image" input="image"/>
+        <column name="content" label="Content" input="image"/>
+        <column name="author" label="Author" input="image"/>
     </table>
 </schema>

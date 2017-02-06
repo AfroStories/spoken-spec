@@ -7,10 +7,10 @@
         <path>/event/all</path>
         <cells>
             <cell id="view_event_details" layout="@layout/list_cell_generic_1" action="show_event_detail">
-                <view id="image" name="image_sm"/>
-                <view id="title" name="start"/>
-                <view id="sub_title_1" name="name" order="1"/>
-                <view id="sub_title_2" name="host_name" />
+                <view id="id" name="id"/>
+                <view id="title" name="title"/>
+                <view id="sub_title_1" name="artist"/>
+                <view id="image" name="image" />
             </cell>
         </cells>
     </list>

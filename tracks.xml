@@ -10,7 +10,7 @@
                 <view id="id" name="id"/>
                 <view id="title" name="title"/>
                 <view id="sub_title_1" name="artist"/>
-                <view id="image" name="image" />
+                <view id="image" name="channelThumbnail" />
             </cell>
         </cells>
     </list>

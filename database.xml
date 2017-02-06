@@ -2,14 +2,14 @@
 <schema name="data.db"
     version="1">
     <table name="track" path="staging/tracks" label="Tracks">
-        <column name="id"  primary="true" visible="false" editable="false"/>
-        <column name="artist" label="Artist" input="input"/>
-        <column name="channelThumbnail" label="Thumbnail" input="image"/>
-        <column name="description" input="text" label="Description"/>
-        <column name="image" input="image" label="Video Still"/>
-        <column name="link" input="input" label="Video Link"/>
-        <column name="title" input="input" label="Title"/>
-        <column name="isFeatured" input="boolean" label="Is Featured"/>
+        <column name="id"               input="label" primary="true" visible="false" editable="false"/>
+        <column name="artist"           input="input" label="Artist"/>
+        <column name="channelThumbnail" input="image" label="Thumbnail"/>
+        <column name="description"      input="text" label="Description"/>
+        <column name="image"            input="image" label="Video Still"/>
+        <column name="link"             input="input" label="Video Link"/>
+        <column name="title"            input="input" label="Title"/>
+        <column name="isFeatured"       input="boolean" label="Is Featured"/>
     </table>
 
     <table name="artist" path="staging/artists" label="Artists">

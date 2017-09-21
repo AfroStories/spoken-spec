@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <page name="com.afrostories.android.spoken.MainActivity">
+        <host>@string/host</host>
+        <layout id="@layout/app_bar_main">
+            <view id="navigation">
+                <listener name="setOnNavigationItemSelectedListener" action="bottom_nav_actions"/>
+            </view>
+        </layout>
+        <actions>
+            <action-group id="bottom_nav_actions">
+                <action id="action_show_discover"
+                    uri="fragment://com.circuitry.android.cell.CellListFragment">
+                    <param key="container" type="id" value="top_layer"/>
+                    <param key="type" value="replace"/>
+                    <param key="rumba" value="down_up"/>
+                    <param key="circuitry.args.uri" type="uri" value="content://com.afrostories.android.spoken.track"/>
+                    <param key="circuitry.args.spec_name" value="track"/>
+                    <param key="circuitry.args.spec" type="res" value="@xml/tracks"/>
+                </action>
+                <action id="action_show_the_cure"
+                    uri="fragment://com.circuitry.android.cell.CellListFragment">
+                    <param key="container" type="id" value="top_layer"/>
+                    <param key="type" value="replace"/>
+                    <param key="rumba" value="up_down"/>
+                    <param key="circuitry.args.uri" type="uri" value="content://com.afrostories.android.spoken.playlist"/>
+                    <param key="circuitry.args.spec_name" value="playlist"/>
+                    <param key="circuitry.args.spec" type="res" value="@xml/curations"/>
+                </action>
+                <action id="action_show_favorites"
+                    uri="fragment://com.circuitry.android.cell.CellListFragment">
+                    <param key="container" type="id" value="top_layer"/>
+                    <param key="type" value="replace"/>
+                    <param key="rumba" value="up_down"/>
+                    <param key="status_view_error_message" type="res" value="@string/error_message"/>
+                    <param key="status_view_empty_message" type="res" value="@string/empty_message"/>
+                    <param key="status_view_text_background" type="res" value="@drawable/background_status_text"/>
+                    <param key="circuitry.args.uri" type="uri" value="content://com.afrostories.android.spoken.favorite"/>
+                    <param key="circuitry.args.spec_name" value="favorite"/>
+                    <param key="circuitry.args.spec" type="res" value="@xml/favorites"/>
+                </action>
+            </action-group>
+        </actions>
+    </page>

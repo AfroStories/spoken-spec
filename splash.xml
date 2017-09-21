@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<splash>
+    <sequence>
+        <fade>
+            <view id="image" align="center"/>
+        </fade>
+        <together>
+            <translate>
+                <view id="image" align="center"/>
+            </translate>
+            <fade>
+                <view id="text" align="center"/>
+            </fade>
+        </together>
+        <fade>
+            <view id="image" align="center"/>
+            <view id="text" align="center"/>
+        </fade>
+    </sequence>
+</splash>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page name="com.afrostories.android.spoken.MainActivity">
+    <host>@string/host</host>
+    <modifier name="authentication" src="com.afrostories.android.spoken.authentication" type="header"/>
+    <layout id="activity_splash">
+        <view id="favorite" action="add_to_favorite"/>
+        <view id="share" action="share"/>
+    </layout>
+    <actions>
+        <action
+            id="add_to_favorite"
+            cls="com.afrostories.android.spoken.FavoriteAction"
+            uri="/favorites/${uid}/${tid}.json"
+            >
+            <param key="request-method" value="PUT"/>
+            <param key="request-content-type" value="json"/>
+        </action>
+        <action
+            id="share"
+            uri="intent://android.intent.action.SEND">
+            <param key="chooser-title" value="Share Poem"/>
+            <param key="type" value="text/plain"/>
+            <param key="android.content.Intent.EXTRA_TEXT" value="http://spoken.afrostories.org/share.jsp?tid=${tid}&amp;uid=${uid}"/>
+        </action>
+    </actions>
+</page>

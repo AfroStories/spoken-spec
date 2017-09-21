@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="data.db"
+    version="1">
+    <table name="track">
+        <column name="id" type="" primary="true"/>
+        <column name="vid" type=""/>
+        <column name="link" type=""/>
+        <column name="channelThumbnail" type=""/>
+        <column name="image" type=""/>
+        <column name="isFeatured" type=""/>
+        <column name="title" type="" searchable="true"/>
+        <column name="artist" type="" searchable="true"/>
+        <column name="description" type="" searchable="true"/>
+    </table>
+    <table name="favorite" same-as="track"/>
+    <table name="playlist">
+        <column name="id" type="" primary="true"/>
+        <column name="link" type=""/>
+        <column name="image" type=""/>
+        <column name="isFeatured" type=""/>
+        <column name="title" type="" searchable="true"/>
+        <column name="description" type="" searchable="true"/>
+    </table>
+</schema>

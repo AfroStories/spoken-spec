@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<authenticate>
+    <delegate name="firebase" cls="com.circuitry.android.firebase.auth.FirebaseAuthFacade"/>
+</authenticate>

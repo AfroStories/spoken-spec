@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<notification>
+    <registration method="PUT" host="@string/host" path="/devices.json"/>
+    <payload-identifiers>
+        <icon default="@drawable/ic_notification" default-type="res"/>
+        <subject default="@string/app_name"/>
+        <message />
+        <link />
+    </payload-identifiers>
+    <link-resolver>
+        <case is="%{ ${value}.matches(.*/tracks/[0-9]*\\?.*) }%" component="com.circuitry.android.coreux.DetailActivity">
+            <param key="parent" value="com.afrostories.android.spoken.MainActivity" type="class"/>
+            <param key="com.circuitry.android.app.DetailFragment.ARG_SPEC_XML_ID" value="@xml/tracks" type="res"/>
+            <param key="com.circuitry.android.coreux.DetailActivity.ARG_URI" value="content://com.afrostories.android.spoken.track" type="uri"/>
+            <param key="com.circuitry.android.coreux.DetailActivity.ARG_RESOURCE_NAME" value="track"/>
+            <param key="com.circuitry.android.coreux.DetailActivity.ARG_ID" value="%{ lastSegmentOf(${value}) }%"/>
+        </case>
+    </link-resolver>
+</notification>

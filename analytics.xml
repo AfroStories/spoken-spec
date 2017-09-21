@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<analytics>
+    <sender cls="com.circuitry.android.google.analytics.GoogleAnalyticsSender">
+        <param key="dry_run" value="false" type="boolean"/>
+        <param key="dispatch_time" value="0" type="integer"/>
+        <param key="unit_id" value="@string/google_analytics_unit_id" type="res-string"/>
+        <param key="track_errors" value="true" type="boolean"/>
+    </sender>
+    <screens>
+        <screen
+            id="timeline"
+            name="Timeline"/>
+        <screen
+            id="event_detail"
+            name="Event Detail"
+            cls="com.afrostories.android.DetailFragment" />
+        <screen
+            id="timeline_filters"
+            name="Timeline Filters"/>
+        <screen
+            id="timeline_search"
+            name="Timeline Search"/>
+    </screens>
+    <events>
+        <event
+            id=""
+            category="Filters"
+            action="Change time period"
+            label=""
+            />
+        <event
+            id=""
+            category="Filters"
+            action="Clear All"
+            label="${tab}"
+            />
+        <event
+            id=""
+            category="Filters"
+            action="Select Item"
+            label="${item_value}"
+            />
+        <event
+            id=""
+            category="Filters"
+            action="Search"
+            label="${tab}"
+            />
+        <event
+            id=""
+            category="Search"
+            action="Search"
+            label="${tab}"
+            />
+    </events>
+</analytics>

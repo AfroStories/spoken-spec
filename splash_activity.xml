@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page name="com.circuitry.android.splash.SplashActivity">
+    <layout id="activity_splash">
+        <view id="text" font="peixe.ttf"/>
+    </layout>
+</page>

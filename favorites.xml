@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spec>
+    <name>favorite</name>
+    <host>@string/host</host>
+    <modifier name="authentication" src="com.afrostories.android.spoken.authentication" type="header"/>
+    <modifier name="user" cls="com.afrostories.android.spoken.FavoriteRequestModifier"/>
+    <list>
+        <path>/favorites/${uid}.json</path>
+        <publish>
+            <param key="link"/>
+            <param key="id" as="tid"/>
+        </publish>
+        <cells>
+            <cell id="view_details" layout="@layout/list_cell" action="show_video">
+                <view id="image" name="channelThumbnail"/>
+                <view id="title" name="title"/>
+                <view id="sub_title_1" name="artist"/>
+                <view id="sub_title_2" />
+            </cell>
+        </cells>
+        <actions>
+            <action
+                id="show_video"
+                event-id="view_video"
+                publish="link, tid"
+                uri="activity://com.afrostories.android.spoken.YoutubePlayerViewActivity"/>
+        </actions>
+    </list>
+</spec>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialogs>
+    <dialog name="com.android.volley.NoConnectionError" title="@string/error" message="@string/no_internet_connection">
+        <button type="neutral" title="@string/ok" listener=""/>
+    </dialog>
+    <dialog name="com.circuitry.android.form.validation.ValidationError" title="@string/error">
+        <button type="neutral" title="@string/ok" listener=""/>
+    </dialog>
+</dialogs>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actions>
+    <action
+        id="profile_pic"
+        uri="content://com.absolut.hoppr.authentication/profile#query"
+        cls="com.afrostories.android.spoken.ShowProfileAction"/>
+    <action
+        id="settings"
+        uri="activity://com.afrostories.android.spoken.SettingsActivity"/>
+    <action
+        id="sign_out"
+        uri="content://com.afrostories.android.spoken.authentication#delete"/>
+</actions>

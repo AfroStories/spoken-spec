@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <spec>
-    <name>event</name>
+    <name>track</name>
     <host>@string/host</host>
     <modifier name="authentication" src="com.absolut.hoppr.authentication" type="header"/>
     <list>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <schema name="data.db"
     version="1">
-    <table name="track" path="staging/tracks" label="Tracks">
+    <table name="track" path="/tracks" label="Tracks">
         <column name="id"               input="label" label="ID" primary="true" visible="false" editable="false"/>
         <column name="artist"           input="input" label="Artist"/>
         <column name="channelThumbnail" input="image" label="Thumbnail"/>
@@ -12,25 +12,25 @@
         <column name="isFeatured"       input="boolean" label="Is Featured"/>
     </table>
 
-    <table name="artist" path="staging/artists" label="Artists">
+    <table name="artist" path="/artists" label="Artists">
         <column name="id"  primary="true" visible="false" editable="false"/>
         <column name="name" label="Name"/>
         <column name="channelThumbnail" label="Thumbnail" input="image/*"/>
     </table>
 
-    <table name="users" path="staging/users" label="Users">
+    <table name="users" path="/users" label="Users">
         <column name="id"  primary="true" visible="false" editable="false"/>
         <column name="name" label="Name"/>
         <column name="channelThumbnail" label="Thumbnail" input="image/*"/>
     </table>
 
-    <table name="playlist" path="staging/playlists" label="Playlists">
+    <table name="playlist" path="/playlists" label="Playlists">
         <column name="id"  primary="true" visible="false" editable="false"/>
         <column name="name" label="Name"/>
         <column name="channelThumbnail" label="Thumbnail" input="image/*"/>
     </table>
 
-    <table name="editorial" path="staging/editorials" label="Editorials">
+    <table name="editorial" path="/editorials" label="Editorials">
         <column name="id"  primary="true" visible="false" editable="false"/>
         <column name="name" label="Name"/>
         <column name="date" label="Date Published" input="date_time"/>

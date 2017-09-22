@@ -3,7 +3,7 @@
     <name>favorite</name>
     <host>@string/host</host>
     <modifier name="authentication" src="com.afrostories.android.spoken.authentication" type="header"/>
-    <modifier name="user" cls="com.afrostories.android.spoken.FavoriteRequestModifier"/>
+    <modifier name="user" cls="com.afrostories.android.spoken.acount.FavoriteRequestModifier"/>
     <list>
         <path>/favorites/${uid}.json</path>
         <publish>
@@ -23,7 +23,7 @@
                 id="show_video"
                 event-id="view_video"
                 publish="link, tid"
-                uri="activity://com.afrostories.android.spoken.YoutubePlayerViewActivity"/>
+                uri="activity://com.afrostories.android.spoken.youtube.YoutubePlayerViewActivity"/>
         </actions>
     </list>
 </spec>

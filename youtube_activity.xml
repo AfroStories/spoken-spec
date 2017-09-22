@@ -9,7 +9,7 @@
     <actions>
         <action
             id="add_to_favorite"
-            cls="com.afrostories.android.spoken.FavoriteAction"
+            cls="com.afrostories.android.spoken.acount.FavoriteAction"
             uri="/favorites/${uid}/${tid}.json"
             >
             <param key="request-method" value="PUT"/>

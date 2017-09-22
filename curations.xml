@@ -22,7 +22,7 @@
                 id="start_playlist"
                 event-id="start_playlist"
                 publish="link"
-                uri="fragment://com.afrostories.android.spoken.AudioPlayerFragment"/>
+                uri="fragment://com.afrostories.android.spoken.the_cure.AudioPlayerFragment"/>
         </actions>
     </list>
     <search same-as="list" local="true"/>

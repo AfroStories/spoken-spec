@@ -2,11 +2,11 @@
 <actions>
     <action
         id="profile_pic"
-        uri="content://com.absolut.hoppr.authentication/profile#query"
-        cls="com.afrostories.android.spoken.ShowProfileAction"/>
+        uri="page://page_user_profile"
+        />
     <action
         id="settings"
-        uri="activity://com.afrostories.android.spoken.SettingsActivity"/>
+        uri="activity://com.afrostories.android.spoken.app_widget.SettingsActivity"/>
     <action
         id="sign_out"
         uri="content://com.afrostories.android.spoken.authentication#delete"/>

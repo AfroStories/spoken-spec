@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page name="user_data">
+
+    <modifier name="authentication" src="com.afrostories.android.spoken.authentication" />
+
+    <layout layout="@layout/activity_user_profile">
+
+        <view
+            id="user_image"
+            name="'http://globalhealth.duke.edu/sites/default/files/styles/dghi_medium/public/profiles/nash_mepukori_student_profile_cropped.jpg'"
+            />
+
+        <view
+            id="sign_out"
+            name="'Sign Out'"
+            action="content://com.afrostories.android.spoken.authentication/delete"/>
+
+    </layout>
+</page>

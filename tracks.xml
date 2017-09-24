@@ -9,21 +9,25 @@
             <param key="link"/>
             <param key="id" as="tid"/>
         </publish>
-        <cells>
-            <cell id="view_details_featured" accept="%{ ${isFeatured} }%" layout="@layout/list_cell_featured" action="show_video">
-                <view id="banner" name="image"/>
-                <view id="image" name="channelThumbnail"/>
-                <view id="title" name="title"/>
-                <view id="sub_title_1" name="artist"/>
-                <view id="sub_title_2" />
-            </cell>
-            <cell id="view_details" layout="@layout/list_cell" action="show_video">
-                <view id="image" name="channelThumbnail"/>
-                <view id="title" name="title"/>
-                <view id="sub_title_1" name="artist"/>
-                <view id="sub_title_2" />
-            </cell>
-        </cells>
+        <layout>
+            <adapter-view id="list">
+                <cells>
+                    <cell id="view_details_featured" accept="%{ ${isFeatured} }%" layout="@layout/list_cell_featured" action="show_video">
+                        <view id="banner" name="image"/>
+                        <view id="image" name="channelThumbnail"/>
+                        <view id="title" name="title"/>
+                        <view id="sub_title_1" name="artist"/>
+                        <view id="sub_title_2" />
+                    </cell>
+                    <cell id="view_details" layout="@layout/list_cell" action="show_video">
+                        <view id="image" name="channelThumbnail"/>
+                        <view id="title" name="title"/>
+                        <view id="sub_title_1" name="artist"/>
+                        <view id="sub_title_2" />
+                    </cell>
+                </cells>
+            </adapter-view>
+        </layout>
         <actions>
             <action
                 id="show_video"

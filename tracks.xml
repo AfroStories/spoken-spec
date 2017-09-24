@@ -24,7 +24,7 @@
                     </cell>
                     <cell id="view_details" 
                         layout-android="@layout/list_cell" 
-                        layout-web="@layout/list_cell" 
+                        layout-web="/WEB-INF/jspf/widgets/list_cell_generic_1.jspf" 
                         action="show_video">
                         <view id="image" name="channelThumbnail"/>
                         <view id="title" name="title"/>

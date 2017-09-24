@@ -3,14 +3,17 @@
     version="1">
     <table name="track" path="/tracks" label="Tracks">
         <column name="id"               input="label" label="ID" primary="true" visible="false" editable="false"/>
-        <column name="artist"           input="input" label="Artist"/>
+        <column name="artist"           input="input" label="Artist" searchable="true"/>
         <column name="channelThumbnail" input="image" label="Thumbnail"/>
-        <column name="description"      input="text" label="Description"/>
+        <column name="description"      input="text" label="Description" searchable="true"/>
         <column name="image"            input="image" label="Video Still"/>
         <column name="link"             input="input" label="Video Link"/>
-        <column name="title"            input="input" label="Title"/>
+        <column name="title"            input="input" label="Title" searchable="true"/>
         <column name="isFeatured"       input="boolean" label="Is Featured"/>
+        <column name="vid" input="input" label="Video ID"/>
     </table>
+
+    <table name="favorite" same-as="track"/>
 
     <table name="artist" path="/artists" label="Artists">
         <column name="id"  primary="true" visible="false" editable="false"/>
@@ -18,7 +21,7 @@
         <column name="channelThumbnail" label="Thumbnail" input="image/*"/>
     </table>
 
-    <table name="users" path="/users" label="Users">
+    <table name="user" path="/users" label="Users">
         <column name="id"  primary="true" visible="false" editable="false"/>
         <column name="name" label="Name"/>
         <column name="channelThumbnail" label="Thumbnail" input="image/*"/>
@@ -26,8 +29,12 @@
 
     <table name="playlist" path="/playlists" label="Playlists">
         <column name="id"  primary="true" visible="false" editable="false"/>
-        <column name="name" label="Name"/>
+        <column name="title" type="" label="Title" searchable="true"/>
         <column name="channelThumbnail" label="Thumbnail" input="image/*"/>
+        <column name="link" type="" input="input"/>
+        <column name="image" type=""/>
+        <column name="isFeatured" type="boolean" input="boolean"/>
+        <column name="description" type="" label="Description"  input="text" searchable="true"/>
     </table>
 
     <table name="editorial" path="/editorials" label="Editorials">

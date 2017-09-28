@@ -13,7 +13,7 @@
         <column name="vid" input="input" label="Video ID"/>
     </table>
 
-    <table name="favorite" same-as="track"/>
+    <table name="favorite" same-as="track" label="Favorites"/>
 
     <table name="artist" path="/artists" label="Artists">
         <column name="id"  primary="true" visible="false" editable="false"/>

@@ -8,6 +8,10 @@
         <link />
     </payload-identifiers>
     <link-resolver>
+
+        <case is="%{ ${value}.contains(form) }%" component="com.circuitry.android.form.FormActivity">
+        </case>
+
         <case is="%{ ${value}.matches(.*/tracks/[0-9]*\\?.*) }%" component="com.circuitry.android.coreux.DetailActivity">
             <param key="parent" value="com.afrostories.android.spoken.MainActivity" type="class"/>
             <param key="com.circuitry.android.app.DetailFragment.ARG_SPEC_XML_ID" value="@xml/tracks" type="res"/>
@@ -15,5 +19,6 @@
             <param key="com.circuitry.android.coreux.DetailActivity.ARG_RESOURCE_NAME" value="track"/>
             <param key="com.circuitry.android.coreux.DetailActivity.ARG_ID" value="%{ lastSegmentOf(${value}) }%"/>
         </case>
+
     </link-resolver>
 </notification>

@@ -8,7 +8,7 @@
             <param key="link"/>
             <param key="id" as="tid"/>
         </publish>
-        <layout>
+        <layout layout-web="/WEB-INF/jspf/widgets/resource_table.jspf">
             <adapter-view id="list">
                 <cells>
                     <cell id="view_details_featured" accept="%{ ${isFeatured} }%" 

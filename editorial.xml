@@ -13,7 +13,7 @@
                 <cells>
                     <cell id="view_details_featured" accept="%{ ${isFeatured} }%" 
                         layout-android="@layout/list_cell_featured" 
-                        layout-web="@layout/list_cell_featured" 
+                        layout-web="/WEB-INF/jspf/widgets/list_cell_generic_1.jspf"
                         action="show_video">
                         <view id="banner" name="image"/>
                         <view id="image" name="channelThumbnail"/>
@@ -23,7 +23,7 @@
                     </cell>
                     <cell id="view_details" 
                         layout-android="@layout/list_cell" 
-                        layout-web="@layout/list_cell" 
+                        layout-web="/WEB-INF/jspf/widgets/list_cell_generic_1.jspf"
                         action="show_video">
                         <view id="image" name="channelThumbnail"/>
                         <view id="title" name="title"/>

@@ -25,9 +25,9 @@
                         layout-android="@layout/list_cell" 
                         layout-web="/WEB-INF/jspf/widgets/list_cell_generic_1.jspf"
                         action="show_video">
-                        <view id="image" name="channelThumbnail"/>
-                        <view id="title" name="title"/>
-                        <view id="sub_title_1" name="artist"/>
+                        <view id="image" name="image"/>
+                        <view id="title" name="name"/>
+                        <view id="sub_title_1" name="author"/>
                         <view id="sub_title_2" />
                     </cell>
                 </cells>

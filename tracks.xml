@@ -4,7 +4,7 @@
     <host>@string/host</host>
     <modifier name="authentication" src="com.afrostories.android.spoken.authentication" type="header"/>
     <list filter-local="true" search-local="true">
-        <path>/tracks.json</path>
+        <path>/tracks</path>
         <publish>
             <param key="link"/>
             <param key="id" as="tid"/>

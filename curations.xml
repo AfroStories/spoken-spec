@@ -8,6 +8,8 @@
         <publish>
             <param key="link"/>
         </publish>
+        <layout>
+            <adapter-view id="list">
         <cells>
             <cell id="playlist" layout="@layout/list_cell_playlist" action="start_playlist">
                 <view id="banner" name="image"/>
@@ -24,6 +26,8 @@
                 publish="link"
                 uri="fragment://com.afrostories.android.spoken.the_cure.AudioPlayerFragment"/>
         </actions>
+            </adapter-view>
+        </layout>
     </list>
     <search same-as="list" local="true"/>
     <detail>

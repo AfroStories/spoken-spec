@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<spec>
-    <name>playlist</name>
+<spec name="playlist">
     <host>@string/host</host>
     <modifier name="authentication" src="com.afrostories.android.spoken.authentication" type="header"/>
     <list filter-local="true" search-local="true">
@@ -8,7 +7,7 @@
         <publish>
             <param key="link"/>
         </publish>
-        <layout>
+        <layout layout-android="" layout-web="/WEB-INF/jspf/widgets/resource_table.jspf">
             <adapter-view id="list">
         <cells>
             <cell id="playlist" layout="@layout/list_cell_playlist" action="start_playlist">

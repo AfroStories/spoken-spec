@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<displays>
+
+    <display table="track">
+        <list>
+            <view id="image" name="channelThumbnail"/>
+            <view id="title" name="title"/>
+            <view id="sub_title_1" name="author"/>
+            <view id="sub_title_2" />
+        </list>
+        <detail>
+            <view name="id" visibility="gone" />
+        </detail>
+    </display>
+
+    <display table="artist">
+        <list>
+            <view id="image" name="channelThumbnail"/>
+            <view id="title" name="title"/>
+            <view id="sub_title_1" name="author"/>
+            <view id="sub_title_2" />
+        </list>
+        <detail>
+            <view name="id" visibility="gone" />
+        </detail>
+    </display>
+
+    <display table="user">
+        <list>
+            <view id="image" name="channelThumbnail"/>
+            <view id="title" name="title"/>
+            <view id="sub_title_1" name="author"/>
+            <view id="sub_title_2" />
+        </list>
+        <detail>
+            <view name="id" visibility="gone" />
+        </detail>
+    </display>
+
+    <display table="playlist">
+        <list>
+            <view id="image" name="channelThumbnail"/>
+            <view id="title" name="title"/>
+            <view id="sub_title_1" name="author"/>
+            <view id="sub_title_2" />
+        </list>
+        <detail>
+            <view name="id" visibility="gone" />
+        </detail>
+    </display>
+
+    <display table="editorial">
+        <list>
+            <view id="image" name="channelThumbnail"/>
+            <view id="title" name="title"/>
+            <view id="sub_title_1" name="author"/>
+            <view id="sub_title_2" />
+        </list>
+        <detail>
+            <view name="id" visibility="gone" />
+        </detail>
+    </display>
+
+</displays>

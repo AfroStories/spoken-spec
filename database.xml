@@ -16,9 +16,9 @@
     <table name="favorite" same-as="track" label="Favorites"/>
 
     <table name="artist" path="/artists" label="Artists">
-        <column name="id"  label="ID" primary="true" visible="false" editable="false"/>
-        <column name="name" label="Name"/>
-        <column name="channelThumbnail" label="Thumbnail" input="image/*"/>
+        <column name="id"  input="label" label="ID" primary="true" visible="false" editable="false"/>
+        <column name="name" input="input" label="Name"/>
+        <column name="channelThumbnail" label="Thumbnail" input="image"/>
     </table>
 
     <table name="user" path="/users" label="Users">

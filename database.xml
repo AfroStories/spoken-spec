@@ -3,7 +3,7 @@
     version="1">
     <table name="track" path="/tracks" label="Tracks">
         <column name="id"               input="label" label="ID" primary="true" visible="false" editable="false"/>
-        <column name="artist"           input="input" label="Artist" searchable="true" reference="artist.name"/>
+        <column name="artist"           input="single" label="Artist" searchable="true" reference="artist.name"/>
         <column name="channelThumbnail" input="image" label="Thumbnail"/>
         <column name="description"      input="text" label="Description" searchable="true"/>
         <column name="image"            input="image" label="Video Still"/>
